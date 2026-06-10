@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPLIANCE  YONGJIN 3</title>
+    <!-- Link untuk memanggil ikon Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         /* Pengaturan Dasar Halaman */
         * {
@@ -73,19 +75,27 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
-        /* Tombol Hijau WhatsApp */
+       /* Tombol Hijau Berbentuk Bulat untuk Ikon */
         .btn-whatsapp {
-            display: inline-block;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
             background-color: #1cbd5d;
             color: white;
             text-decoration: none;
-            font-size: 1.05rem;
-            font-weight: 600;
-            padding: 12px 30px;
-            border-radius: 10px;
-            width: 100%;
+            font-size: 1.8rem; /* Memperbesar ukuran ikon */
+            width: 60px;       /* Mengatur lebar tombol */
+            height: 60px;      /* Mengatur tinggi tombol */
+            border-radius: 50%; /* Membuat tombol bulat sempurna */
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        /* Efek saat tombol ditekan */
+        .btn-whatsapp:active {
+            transform: scale(0.93);
+            background-color: #16994a;
         }
 
         /* Efek saat tombol ditekan/disentuh */
@@ -103,19 +113,19 @@
         <div class="card">
             <div class="name">Chaidar - Safety Officer</div>
             <div class="phone-number">+62 819-3658-4984</div>
-            <a href="https://wa.me/6281936584984" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            <a href="https://wa.me/6281936584984" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
 
         <div class="card">
             <div class="name">Yudha - Fire Expert</div>
             <div class="phone-number">+62 878-3216-4961</div>
-            <a href="https://wa.me/6287832164961" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            <a href="https://wa.me/6287832164961" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
 
         <div class="card">
             <div class="name">Novia - Technical Compliance</div>
             <div class="phone-number">+62 896-0239-9741</div>
-            <a href="https://wa.me/6289602399741" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            <a href="https://wa.me/6289602399741" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </div>
 
